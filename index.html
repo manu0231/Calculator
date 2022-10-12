@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/assets/index.101853d5.css">
+  </head>
+  <body class="bg-black text-white">
+    <div class="container grid place-items-center h-screen">
+      <div class="button">
+        <input type="text" id="display" />
+        <div class="allbuttons flex space-x-2  justify-center items-center">
+           <div class="col1 mt-3 space-y-1">
+            <div class="row1 space-x-2 ">
+              <button class="btn" onclick="addToDisplay('AC')">AC</button>
+              <button class="btn" onclick="addToDisplay('()')">( )</button>
+              <button class="btn" onclick="addToDisplay('%')">%</button>
+            </div>
+            <div class="row2 space-x-2 ">
+              <button class="btn"  onclick=addToDisplay(7)>7</button>
+              <button class="btn"  onclick=addToDisplay(8)>8</button>
+              <button class="btn"  onclick=addToDisplay(9)>9</button>
+            </div>
+            <div class="row3 space-x-2">
+              <button class="btn"  onclick=addToDisplay(4)>4</button>
+              <button class="btn"  onclick=addToDisplay(5)>5</button>
+              <button class="btn"  onclick=addToDisplay(6)>6</button>
+            </div>
+            <div class="row4 space-x-2">
+              <button class="btn"  onclick=addToDisplay(1)>1</button>
+              <button class="btn"  onclick=addToDisplay(2)>2</button>
+              <button class="btn"  onclick=addToDisplay(3)>3</button>
+            </div>
+            <div class="row5 space-x-2">
+              <button class="btn"  onclick=addToDisplay(0)>0</button>
+              <button class="btn"  onclick="addToDisplay('.')">.</button>
+              <button class="btn"  onclick="addToDisplay('back')">&lt;</button>
+            </div>
+          </div>
+          <div class="col2 mt-3 space-y-1 ">
+            <button class="btn3" onclick="addToDisplay('/')">/</button>
+            <button class="btn3" onclick="addToDisplay('*')">*</button>
+            <button class="btn3" onclick="addToDisplay('-')">-</button>
+            <button class="btn3" onclick="addToDisplay('+')">+</button>
+            <button class="btn3" onclick="addToDisplay('=')">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+<script src="/script.js"></script>
+</html>
